@@ -2,6 +2,7 @@ import jwtDecode from 'jwt-decode';
 import { useEffect, useState } from 'react'
 import { Payload } from '../types/payload';
 
+//バックエンドから受けっとたJWTが存在するか、JWTの有効期限がきれていないか
 export const useAuth = () => {
   const [authInfo, setAuthInfo] = useState<{
     checked: boolean,
